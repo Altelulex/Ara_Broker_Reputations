@@ -579,7 +579,7 @@ UpdateTablet = function(self)
 					"isCapped", isCapped,
 					"inactive", inactive,
 					"textValue", textValue,
-					"FactionID", FactionID
+					"factionID", factionID
 				)
 				button = buttons[nbEntries]
 				button:SetScript("OnClick", Faction_OnClick)
@@ -1411,4 +1411,5 @@ end
 
 f:SetScript("OnEvent", function(self, event, ...) return self[event](self, ...) end)
 f:RegisterEvent"ADDON_LOADED"
+
 
